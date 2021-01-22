@@ -19,7 +19,6 @@
                  <el-form-item label="declarationMap">
                      <el-switch v-model="options.declarationMap"></el-switch>
                  </el-form-item>
-
              </el-form-item>
 
              </el-form>

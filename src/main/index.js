@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, Notification } from 'electron'
 
 /**
  * Set `__static` path to static files in production
@@ -24,6 +24,16 @@ function createWindow () {
     useContentSize: true,
     width: 1000
   })
+
+  const notification = {
+    title: 'Basic Notification',
+    body: 'Notification from the Main process',
+    subtitle: '测试',
+    hasReply: true,
+    replyPlaceholder: '2314',
+    closeButtonText: '关闭'
+  }
+  new Notification(notification).show()
 
   mainWindow.loadURL(winURL)
 

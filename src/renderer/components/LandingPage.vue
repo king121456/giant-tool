@@ -3,8 +3,10 @@
       <div class="sidebar">
           <main-menu></main-menu>
       </div>
-      <div class="content" style=" box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)">
-          <router-view ></router-view>
+      <div class="content">
+          <div style="margin-top: 3px;padding:10px;box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);background: #cfdac8;border-radius: 5px">
+              <router-view ></router-view>
+          </div>
       </div>
   </div>
 </template>
@@ -32,14 +34,16 @@
         left:0;
         bottom: 0;
         top:0;
-        background-color: #545c64;
+        background-color: #7c9473;
     }
 
     .content{
-        position: relative;
-        max-width: 65%;
+        position: absolute;
+        left: 15%;
+        width: 85%;
         margin: 0 auto;
         padding: 20px 15px;
-        height: 100%
+        height: 100%;
+        background-color:#f8f8f8;
     }
 </style>

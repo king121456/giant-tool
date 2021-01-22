@@ -13,6 +13,10 @@ export default new Router({
         path: '/tsconfig',
         name: 'ts-config',
         component: require('@/components/TsConfig').default
+      }, {
+        path: '/notify',
+        name: 'notify',
+        component: require('@/components/Notify').default
       }]
     },
     {
